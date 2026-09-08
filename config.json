@@ -1,5 +1,18 @@
 {
+  // 【全局总开关】
+  // true: 允许正常运行并进行 2FA 验证
+  // false: 立即全局失效，任何人都无法使用
   "allowRun": true,
-  "totpSecret": "JBSWY3DPEHPK3PXP", 
+
+  // 【多用户 2FA 秘钥白名单数组】
+  // 你可以为不同的人分发不同的秘钥（录入到他们的谷歌身份验证器中）
+  // 只要用户输入的 6 位验证码能和数组里的【任意一个】秘钥匹配成功，即可通过验证
+  "totpSecrets": [
+    "GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ", // VT
+    "MFRGGZDFMZTWQ2LKNNQWIZLUMV2G64TF" // TT
+  ],
+
+  // 【自定义失效提示语】
+  // 当 allowRun 为 false，或者请求失败时，弹窗或页面上显示的提示文字
   "expireMessage": "授权已过期或已被管理员撤销，请联系管理员。"
 }

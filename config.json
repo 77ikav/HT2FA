@@ -1,9 +1,0 @@
-{
-  "allowRun": true,
-  "totpSecrets": [
-    "GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ",
-    "MFRGGZDFMZTWQ2LKNNQWIZLUMV2G64TF",
-    "JBSWY3DPEHPK3PXP"
-  ],
-  "expireMessage": "授权已过期或已被管理员撤销，请联系管理员。"
-}
